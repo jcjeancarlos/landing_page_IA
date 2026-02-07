@@ -175,9 +175,207 @@ img {
     text-decoration: underline;
 }
 
+.expert_photo {
+    width: 120px;
+    height: 150px;
+    margin: 0 auto 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid #e5e7eb;
+}
+
+.expert_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.inscription_form {
+    padding: 40px 50px;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.hero.small_hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero.small_hero {
+    padding-bottom: 20px;
+}
+
+.hero.small_hero .hero_content {
+    text-align: center;
+}
+
+.form_section {
+    padding-top: 30px;
+}
+
+.inscription_form input, .inscription_form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+}
+
+.inscription_form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.inscription_form .btn_trial {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
 .footer {
     text-align: center;
     padding: 20px;
     color: #94a3b8;
     margin-top: 40px;
+}
+
+/* Overlay du popup : caché par défaut, couvre toute la page */
+.popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+/* Contenu du popup : boîte centrale avec style et animation */
+.popup_content {
+    background: #fff;
+    padding: 30px 40px;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+    animation: popupFade 0.5s ease;
+}
+
+
+.popup_content h2, .popup_content p {
+    color: #111 ;
+}
+
+
+/* Btn close popup */
+.popup_close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Animation d’ouverture : fade + léger zoom */
+@keyframes popupFade {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+/* responsivité */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero_img img {
+        max-width: 220px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    .feature {
+        text-align: center;
+    }
+
+    .highlight {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+    }
+
+    .highlight_img img {
+        max-width: 250px;
+    }
+
+    .cta {
+        margin: 40px 5%;
+        padding: 60px 5%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .nav_links a {
+        margin-right: 10px;
+    }
+
+    .hero_content h1 {
+        font-size: 2rem;
+    }
+
+    .feature {
+        padding: 20px;
+    }
+
+    .popup_content {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .inscription_form {
+        padding: 30px 25px;
+    }
+
+    .footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Digital House JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a class="logo" href="index.html">Digital House JS</a>
+
+    <nav class="nav_links">
+        <a href="webinaires.html">Webinaires</a>
+        <a href="experts.html">Experts</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="inscription.html"><button class="btn_login">S’inscrire</button></a>
+</header>
+
+<section class="hero small_hero">
+    <div class="hero_content">
+        <h1>Inscription</h1>
+        <p>Rejoignez nos webinaires et développez vos compétences en IA appliquée au développement logiciel.</p>
+    </div>
+</section>
+
+<section class="form_section">
+    <form class="inscription_form">
+
+        <div class="form_group">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form_group">
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" placeholder="Votre email" required>
+        </div>
+
+        <div class="form_group">
+            <label for="telephone">Téléphone</label>
+            <input type="text" id="telephone" placeholder="Votre numéro">
+        </div>
+
+        <div class="form_group">
+            <label for="webinaire">Choisissez un webinaire</label>
+            <select id="webinaire" required>
+                <option value="">Sélectionnez...</option>
+                <option value="intro">Introduction à l’IA pour développeurs</option>
+                <option value="avancé">Techniques avancées et automatisation</option>
+                <option value="expert">IA appliquée aux projets réels</option>
+            </select>
+        </div>
+
+        <div class="form_group">
+            <label for="message">Message (optionnel)</label>
+            <textarea id="message" placeholder="Votre message"></textarea>
+        </div>
+
+        <button type="submit" class="btn_trial">Valider l’inscription</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>Digital House Company JS accompagne les développeurs dans l’adoption concrète de l’intelligence artificielle.</p>
+    <p>© 2026 Digital House JS — Tous droits réservés</p>
+</footer>
+
+</body>
+</html>

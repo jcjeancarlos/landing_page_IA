@@ -9,23 +9,23 @@
 <body>
 
     <header class="header">
-        <div class="logo">Digital House JS</div>
+        <a class="logo" href="index.html">Digital House JS</a>
 
         <nav class="nav_links">
-            <a href="#">Webinaires</a>
-            <a href="#">Experts</a>
-            <a href="#">Ressources</a>
-            <a href="#">Contact</a>
+            <a href="webinaires.html">Webinaires</a>
+            <a href="experts.html">Experts</a>
+            <a href="ressources.html">Ressources</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
-        <button class="btn_login">S’inscrire</button>
+        <a href="inscription.html"><button class="btn_login">S’inscrire </button></a>
     </header>
 
     <section class="hero">
         <div class="hero_content">
             <h1>Votre meilleure proposition de valeur</h1>
             <p>Des webinaires pratiques conçus pour aider les développeurs à comprendre, adopter et appliquer l’intelligence artificielle dans des projets logiciels concrets.</p>
-            <button class="btn_trial">Commencer gratuitement</button>
+            <a href="inscription.html"><button class="btn_trial">Commencer gratuitement</button></a>
         </div>
 
         <div class="hero_img">
@@ -82,20 +82,21 @@
 
     <section class="cta">
         <h2>La meilleure manière de structurer un site web</h2>
-        <p><a href="#" class="article_link">Lire l’article</a></p>
+        <p><a href="#" class="open_popup" data-popup="popup-article-1">Lire l’article</a>
+></p>
     </section>
 
     <section class="features">
         <div class="feature">
             <h2>Les clés pour écrire un contenu qui convertit</h2>
             <p>Comprendre comment structurer un message clair et efficace pour améliorer l’engagement.</p>
-            <a href="#">Lire la suite</a>
+            <a href="#" class="open_popup" data-popup="popup-article-2">Lire la suite</a>
         </div>
 
         <div class="feature">
             <h2>Adapter son contenu à une audience technique</h2>
             <p>Apprendre à communiquer efficacement avec des développeurs et des équipes produit.</p>
-            <a href="#">Lire la suite</a>
+            <a href="#" class="open_popup" data-popup="popup-article-3">Lire la suite</a>
         </div>
     </section>
 
@@ -111,13 +112,50 @@
     <section class="cta">
         <h2>Prêt à commencer ?</h2>
         <p>Rejoignez notre prochain webinaire et utilisez l’IA efficacement dans vos projets de développement.</p>
-        <button class="btn_trial">Commencer gratuitement</button>
+        <a href="inscription.html"><button class="btn_trial">Commencer gratuitement</button></a>
     </section>
 
+
+    <!-- Les popups sont cachés par défaut et affichés dynamiquement grâce au JavaScript lorsque l’utilisateur clique sur un lien. -->
+
+    <div id="popup-article-1" class="popup_overlay">
+        <div class="popup_content">
+            <span class="popup_close" data-close="popup-article-1">&times;</span>
+            <h2>La meilleure manière de structurer un site web</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam quisquam animi veritatis quaerat exercitationem, pariatur blanditiis dolore perferendis hic debitis at accusantium qui tempore. Itaque inventore nam necessitatibus repellendus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, praesentium. Nesciunt maxime consequuntur praesentium architecto aliquid quis repellendus, similique fugit aliquam a culpa fuga sit temporibus quidem laboriosam incidunt. Sed.<br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur voluptatum molestias accusamus vitae illum, sunt eaque? A quae deserunt porro eum aliquam rem reiciendis quas quis ad, omnis necessitatibus.
+            </p>
+        </div>
+    </div>
+
+    <div id="popup-article-2" class="popup_overlay">
+        <div class="popup_content">
+            <span class="popup_close" data-close="popup-article-2">&times;</span>
+            <h2>Les clés pour écrire un contenu qui convertit</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod pariatur eum autem dolores maiores. Ipsa veritatis distinctio, amet perspiciatis officiis sit, aperiam, delectus corrupti at minima ea expedita iusto enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed tempore pariatur labore! Repudiandae, reiciendis saepe ad optio numquam adipisci culpa. Minus voluptatibus aliquam, facere voluptatum optio odit. Amet, nesciunt unde!
+            </p>
+        </div>
+    </div>
+
+    <div id="popup-article-3" class="popup_overlay">
+        <div class="popup_content">
+            <span class="popup_close" data-close="popup-article-3">&times;</span>
+            <h2>Adapter son contenu à une audience technique</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque placeat quis et, at veniam nam eius sequi pariatur modi nostrum quo neque necessitatibus deleniti architecto quaerat officia beatae autem optio?
+            </p>
+        </div>
+    </div>
+
+
     <footer class="footer">
-        <p>Digital House Company accompagne les développeurs dans l’adoption concrète de l’intelligence artificielle.</p>
+        <p>Digital House Company JS accompagne les développeurs dans l’adoption concrète de l’intelligence artificielle.</p>
         <p>© 2026 Digital House JS — Tous droits réservés</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
